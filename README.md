@@ -1,9 +1,10 @@
 
-
 EstNLTK (NLTK ehk Natural Language ToolKit) on peamiselt pythonis kirjutatud kogumik teeke eestikeelsete tekstide töötluseks.
 
 EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavaheline liidestamine, kättesaadavaks muutmine ning uute loomine.
- 
+
+
+Huvitavamaid tööriistu, mis projekti käigus on valminud:
  
 ##estnltk
 
@@ -24,49 +25,46 @@ EstNLTK kui projekti tuumaks on estnltk pythoni teek, milles sisaldub:
 
 ##Texts-viewer
 
-* [Dokumentatsioon](TODO)
-* [Kood](TODO)
+* [Dokumentatsioon](TODO) Dokumentatsioon hetkel puudub
+* [Kood](https://github.com/estnltk/texts-viewer)
 
-TODO: kirjeldus
+Veebitööriist tekstide käsitsi märgendamiseks ning eraldusmustrite testimiseks. 
+Võimaldab teksti kiiresti mustrite alusel märgendada ning hiljem uusi mustrieraldustööriistu olemasolevate annotatsioonide vastu testida.
 
 ##kokteiliklaas
 
-* [Dokumentatsioon](TODO)
-* [Kood](TODO)
+* [Dokumentatsioon](TODO) Dokumentatsioon hetkel puudub
+* [Kood](https://github.com/estnltk/visualisations/tree/master/chi_square)
 
 TODO: kirjeldus
 
 ##Textclassifier
 
-* [Dokumentatsioon](TODO)
-* [Kood](TODO)
+* Dokumentatsioon hetkel puudub
+* [Kood](https://github.com/estnltk/textclassifier)
 
+## Ner-tagger
 
-TODO: kirjeldus
+* [Dokumentatsioon](https://github.com/estnltk/ner-tagger/blob/master/README.md)
+* [Kood](https://github.com/estnltk/ner-tagger)
+
+Veebitööriist, mis aitab märgendada ja annoteerida teksti. Eelkõige mõeldud nimeolemite märgendamiseks.
+
 
 ##gap-tagger
 
-* [Dokumentatsioon](TODO)
-* [Kood](TODO)
-
-TODO: kirjeldus
-
-##eventminer
-
-* [Dokumentatsioon](TODO)
-* [Kood](TODO)
+* [Dokumentatsioon](TODO) Dokumentatsioon hetkel puudub
+* [Kood](https://github.com/estnltk/gap-tagger)
 
 TODO: kirjeldus
 
 ##episodeminer
 
-* [Dokumentatsioon](TODO)
-* [Kood](TODO)
+* [Dokumentatsioon](TODO) Olemas, tuleb veel üles panna.
+* [Kood](https://github.com/estnltk/episode-miner)
 
 
 TODO: kirjeldus
-
-
 
 
 --------- 
