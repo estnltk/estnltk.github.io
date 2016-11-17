@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation &mdash; estnltk 1.2 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="estnltk 1.2 documentation" href="../index.html" />
+    <link rel="next" title="Working with text" href="text.html" />
+    <link rel="prev" title="Estnltk — Open source tools for Estonian natural language processing" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="text.html" title="Working with text"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Estnltk — Open source tools for Estonian natural language processing"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">estnltk 1.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="quick-installation-with-pip">
+<h2>Quick installation with pip<a class="headerlink" href="#quick-installation-with-pip" title="Permalink to this headline">¶</a></h2>
+<p>The easiest way to install Estnltk is using the standard <code class="docutils literal"><span class="pre">pip</span></code> tool, which downloads
+the latest Estnltk version from PyPi repository, builds it and installs it:</p>
+<div class="highlight-python"><div class="highlight"><pre>pip install estnltk
+</pre></div>
+</div>
+<p>However, in order the command to succeed, you need to have the necessary dependencies installed your system,
+regardless of the OS you run.</p>
+<p><strong>NB! Check section about post-installation steps as well.</strong></p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p><strong>Python with development headers.</strong> <a class="reference external" href="https://www.python.org/">https://www.python.org/</a> .
+The most obvious dependency of course is Python itself.
+Estnltk currently supports <em>versions 2.7 and 3.4</em>.
+Other versions may work as well, but are not tested.
+Python installer for Windows includes the development headers that are saved to the Python folder.
+In Linux, depending on the flavor and distribution, you usually have to install the headers separately.
+Either by building the Python from source or using a package manager. The package is typically named
+<code class="docutils literal"><span class="pre">python-dev</span></code> for Python 2 and <code class="docutils literal"><span class="pre">python3-dev</span></code> for Python3.</p>
+<p><strong>SWIG wrapper generator</strong>, <a class="reference external" href="http://swig.org/">http://swig.org/</a> .
+SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
+SWIG is used with different types of target languages including common scripting languages such as Javascript, Perl, PHP, Python, Tcl and Ruby.
+Estnltk contains C++ code that uses SWIG to extend Python.
+In Linux, this package is usually named <code class="docutils literal"><span class="pre">swig</span></code> and can be installed with a package manager.</p>
+<p><strong>C++ compiler</strong>.
+In <em>Linux</em> systems, Estnltk can be built using GNU C++ compiler which can be installed with a package manager.
+Typically the package is named <code class="docutils literal"><span class="pre">g++</span></code>.
+It is also possible to manually download the compiler from <a class="reference external" href="https://gcc.gnu.org/">https://gcc.gnu.org/</a> .</p>
+<p>In <em>Windows</em>, we recommend using Visual Studio 2008 for Python2.7 and Visual Studio 2010 for Python3.4.
+Note that for 64-bit versions you need to have also 64-bit toolchains, which are not included in Express versions of the Visual Studio.
+We recommend downloading the full Visual Studio SDK and performing the building process through the Visual studio command prompt interface.</p>
+<p><strong>Java VM</strong>.
+Several Estnltk components are written in Java and interfaced with Python.
+Therefore, you also need latest Java Runtime installed on your system.
+The <code class="docutils literal"><span class="pre">java</span></code> virtual machine must be in the system <code class="docutils literal"><span class="pre">PATH</span></code>.
+We recommend using Oracle Java <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>,
+although alternatives such as OpenJDK (<a class="reference external" href="http://openjdk.java.net/">http://openjdk.java.net/</a>) should also work.</p>
+<p><strong>setuptools</strong>. <a class="reference external" href="https://pypi.python.org/pypi/setuptools">https://pypi.python.org/pypi/setuptools</a> .
+A popular toolchain to build Python packages. In Linux package managers, typically called <code class="docutils literal"><span class="pre">python-setuptools</span></code> .</p>
+<p><strong>Numpy/Scipy stack</strong>. <a class="reference external" href="http://www.scipy.org/install.html">http://www.scipy.org/install.html</a>
+We include numpy/scipy in this list as it is quite difficult to build it from scratch
+due to ATLAS/BLAS dependencies. Thus, we recommend installing a pre-built binaries (see <a class="reference external" href="http://www.scipy.org/install.html">http://www.scipy.org/install.html</a>).</p>
+<p><strong>python-crfsuite (version 0.8.1)</strong>. Conditional random field library. There should be no problems building it automatically,
+but just in case we have included pre-built binaries in our repository:
+<a class="reference external" href="https://github.com/estnltk/estnltk/tree/master/dist/python-crfsuite">https://github.com/estnltk/estnltk/tree/master/dist/python-crfsuite</a> .</p>
+<p><strong>Other dependencies</strong></p>
+<p>The rest of the dependencies should be easy to build, but just in case they wont,
+here is the list of their names and precise version required by Estnltk.</p>
+<p>Windows users should check out Christoph Gohlke&#8217;s website: <a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">http://www.lfd.uci.edu/~gohlke/pythonlibs/</a> ,
+that contains an marvellous list of pre-built binaries, including the ones required by Estnltk.</p>
+<ul class="simple">
+<li><strong>regex (version 2015.03.18)</strong></li>
+<li><strong>six (version 1.9.0)</strong></li>
+<li><strong>nltk (version 3.0.2)</strong></li>
+<li><strong>pandas (version 0.15.2)</strong></li>
+<li><strong>cached-property (version 1.2.0)</strong></li>
+<li><strong>beautifulsoup4 (version 4.3.2)</strong></li>
+</ul>
+</div>
+<div class="section" id="running-the-tests">
+<h2>Running the tests<a class="headerlink" href="#running-the-tests" title="Permalink to this headline">¶</a></h2>
+<p>After you have installed the library, you should run the unit tests:</p>
+<div class="highlight-python"><div class="highlight"><pre>python -m unittest discover estnltk.tests
+</pre></div>
+</div>
+<p>Note that when you built directly from cloned Estnltk repository, navigate away from it as
+running the command in the same directory can cause problems.</p>
+<p>When unit tests pass, you know you have installed all necessary dependencies of the library.</p>
+</div>
+<div class="section" id="building-from-source">
+<h2>Building from source<a class="headerlink" href="#building-from-source" title="Permalink to this headline">¶</a></h2>
+<p>First thing after installing the dependencies is to get the source.
+One option is cloing the repository using latest code:</p>
+<div class="highlight-python"><div class="highlight"><pre>git clone https://github.com/estnltk/estnltk estnltk
+</pre></div>
+</div>
+<p>or from mirror repository:</p>
+<div class="highlight-python"><div class="highlight"><pre>git clone https://estnltk.cs.ut.ee/timo/estnltk.git estnltk
+</pre></div>
+</div>
+<p>or download it as a compressed zip:</p>
+<div class="highlight-python"><div class="highlight"><pre>https://estnltk.cs.ut.ee/estnltk/estnltk/repository/archive.zip
+</pre></div>
+</div>
+<p>Then, extract the sources and issue following commands in the downloaded/cloned folder to build and install:</p>
+<div class="highlight-python"><div class="highlight"><pre>python setup.py build
+sudo python setup.py install
+</pre></div>
+</div>
+<p>Note that <code class="docutils literal"><span class="pre">python</span></code> usually refers to default Python version installed with the system.
+Usually, you can also use more specific versions by replacing <code class="docutils literal"><span class="pre">python</span></code> with <code class="docutils literal"><span class="pre">python2.7</span></code> or <code class="docutils literal"><span class="pre">python3.4</span></code>.
+Note that the same commands work when building in Windows, but you need to execute them in Visual Studio SDK command prompt.</p>
+</div>
+<div class="section" id="windows-installers">
+<h2>Windows installers<a class="headerlink" href="#windows-installers" title="Permalink to this headline">¶</a></h2>
+<p>You can use pre-built windows installers for Estnltk.
+Note that you still need to install the dependencies separately.</p>
+<p>32-bit:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/estnltk/estnltk/blob/master/dist/estnltk-1.2.win32-py2.7.msi">https://github.com/estnltk/estnltk/blob/master/dist/estnltk-1.2.win32-py2.7.msi</a></li>
+<li><a class="reference external" href="https://github.com/estnltk/estnltk/blob/master/dist/estnltk-1.2.win32-py3.4.msi">https://github.com/estnltk/estnltk/blob/master/dist/estnltk-1.2.win32-py3.4.msi</a></li>
+</ul>
+<p>64-bit:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/estnltk/estnltk/blob/master/dist/estnltk-1.2.win-amd64-py2.7.msi">https://github.com/estnltk/estnltk/blob/master/dist/estnltk-1.2.win-amd64-py2.7.msi</a></li>
+<li><a class="reference external" href="https://github.com/estnltk/estnltk/blob/master/dist/estnltk-1.2.win-amd64-py3.4.msi">https://github.com/estnltk/estnltk/blob/master/dist/estnltk-1.2.win-amd64-py3.4.msi</a></li>
+</ul>
+</div>
+<div class="section" id="post-installation-steps">
+<h2>Post-installation steps<a class="headerlink" href="#post-installation-steps" title="Permalink to this headline">¶</a></h2>
+<p>Downloading NLTK tokenizers for Estonian. These are necessary for tokenization:</p>
+<div class="highlight-python"><div class="highlight"><pre>python -m nltk.downloader punkt
+</pre></div>
+</div>
+<p>Estnltk comes with pre-built named entity taggers, but you can optionally rebuild them if you have lost them for some reason.
+The command to build the default named entity tagger for Estonian:</p>
+<div class="highlight-python"><div class="highlight"><pre>python -m estnltk.tools.train_default_ner_model
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#quick-installation-with-pip">Quick installation with pip</a></li>
+<li><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li><a class="reference internal" href="#running-the-tests">Running the tests</a></li>
+<li><a class="reference internal" href="#building-from-source">Building from source</a></li>
+<li><a class="reference internal" href="#windows-installers">Windows installers</a></li>
+<li><a class="reference internal" href="#post-installation-steps">Post-installation steps</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">Estnltk &#8212; Open source tools for Estonian natural language processing</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="text.html"
+                        title="next chapter">Working with text</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/tutorials/installation.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="text.html" title="Working with text"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Estnltk — Open source tools for Estonian natural language processing"
+             >previous</a> |</li>
+        <li><a href="../index.html">estnltk 1.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, University of Tartu.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b3.
+    </div>
+  </body>
+</html>
