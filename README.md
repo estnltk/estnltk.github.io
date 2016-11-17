@@ -20,8 +20,11 @@ EstNLTK kui projekti tuumaks on estnltk pythoni teek, milles sisaldub:
 * sõnaliikide määramine
 * eesti keele morfoloogiline süntees (lemmast ja sõnavormist õige sõnakuju tuletamine)
 * nimeolemite e. nimega üksuste tuvastamine eestikeelsest tekstist (*NER* ehk *Named-entity recognition*)
-* liidestus eesti wordnetiga
-* eestikeelsete ajaväljendite tuvastamine
+* liidestus eesti Wordnetiga
+* eestikeelsete ajaväljendite tuvastamine ning nende semantika esitamine (TIMEX3 formaadis)
+* pindsüntaktiline analüüs ning sõltuvussüntaktiline analüüs:
+	* masinõppepõhine analüüs MaltParseri abil
+	* reeglipõhine analüüs mooduli EstCG abil
 
 ##Texts-viewer
 
