@@ -4,7 +4,7 @@ EstNLTK (NLTK ehk Natural Language ToolKit) on peamiselt pythonis kirjutatud kog
 EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavaheline liidestamine, kättesaadavaks muutmine ning uute loomine.
 
 
-Huvitavamaid tööriistu, mis projekti käigus on valminud:
+# Huvitavamaid tööriistu, mis projekti käigus on valminud:
  
 ##estnltk
 
