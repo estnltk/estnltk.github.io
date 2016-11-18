@@ -34,12 +34,12 @@ EstNLTK kui projekti tuumaks on Pythoni estnltk teek, milles sisaldub:
 Veebitööriist tekstide käsitsi märgendamiseks ning eraldusmustrite testimiseks. 
 Võimaldab teksti kiiresti mustrite alusel märgendada ning hiljem uusi mustrieraldustööriistu olemasolevate annotatsioonide vastu testida.
 
-##kokteiliklaas
+##Volcanoplot
 
-* [Dokumentatsioon](TODO) Dokumentatsioon hetkel puudub
-* [Kood](https://github.com/estnltk/visualisations/tree/master/chi_square)
+* [Dokumentatsioon](https://github.com/estnltk/volcanoplot/blob/master/README.md) Dokumentatsioon hetkel puudub
+* [Kood](https://github.com/estnltk/volcanoplot)
 
-TODO: kirjeldus
+Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedusloendit. (Näide kasutamisest postimehe artiklite põhjal)[https://github.com/estnltk/volcanoplot/blob/master/docs/postimees_tutorial.ipynb].
 
 ##Textclassifier
 
