@@ -36,7 +36,7 @@ Võimaldab teksti kiiresti mustrite alusel märgendada ning hiljem uusi mustrier
 
 ##Volcanoplot
 
-* [Dokumentatsioon](https://github.com/estnltk/volcanoplot/blob/master/README.md) Dokumentatsioon hetkel puudub
+* [Dokumentatsioon](https://github.com/estnltk/volcanoplot/blob/master/README.md)
 * [Kood](https://github.com/estnltk/volcanoplot)
 
 Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedusloendit. [Näide kasutamisest postimehe artiklite põhjal](https://github.com/estnltk/volcanoplot/blob/master/docs/postimees_tutorial.ipynb).
