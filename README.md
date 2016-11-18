@@ -67,8 +67,7 @@ TODO: kirjeldus
 * [Kood](https://github.com/estnltk/episode-miner)
 
 
-TODO: kirjeldus
-
+Episode-miner leiab Winepi algoritmiga sündmuste jadast sagedamini esinevad episoodid. Näiteks tekstist tihti kasutatud fraasid või sõnadest sagedasemad tähekombinatsioonid. Võimaldab sündmusi rühmitada ja toob näiteid leitud episoodidest.
 
 --------- 
 
