@@ -1,7 +1,7 @@
 
-EstNLTK (NLTK ehk Natural Language ToolKit) on peamiselt pythonis kirjutatud kogumik teeke eestikeelsete tekstide töötluseks.
+EstNLTK (NLTK ehk Natural Language ToolKit) on peamiselt Pythonis kirjutatud kogumik teeke eestikeelsete tekstide töötluseks.
 
-EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavaheline liidestamine, kättesaadavaks muutmine ning uute loomine.
+EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavaheline liidestamine ja kättesaadavaks muutmine ning uute loomine.
 
 
 # Huvitavamaid tööriistu, mis projekti käigus on valminud:
@@ -11,15 +11,15 @@ EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavahelin
 * [Dokumentatsioon](http://estnltk.github.io/estnltk)
 * [Kood](http://github.com/estnltk/estnltk)
 
-EstNLTK kui projekti tuumaks on estnltk pythoni teek, milles sisaldub:
+EstNLTK kui projekti tuumaks on Pythoni estnltk teek, milles sisaldub:
 
 * eesti keele sõnestamine ehk sõnapiiride tuvastamine ehk üksustamine (tokeniseerimine)
 * eesti keele lausestamine ehk lausepiiride tuvastamine
-* eesti keele osalausestamine ehk osalause piiride tuvastamine
-* eesti keele lemmatiseerimine ehk sõnade algvormide (lemmade) määramine ja morfoloogiline analüüs (liidestudes mugavalt vabamorfiga)
+* eesti keele osalausestamine ehk osalausepiiride tuvastamine
+* eesti keele lemmatiseerimine ehk sõnade algvormide (lemmade) määramine ning morfoloogiline analüüs ja ühestamine (liidestudes mugavalt vabamorfiga)
 * sõnaliikide määramine
-* eesti keele morfoloogiline süntees (lemmast ja sõnavormist õige sõnakuju tuletamine)
-* nimeolemite e. nimega üksuste tuvastamine eestikeelsest tekstist (*NER* ehk *Named-entity recognition*)
+* eesti keele morfoloogiline süntees (etteantud lemma ja grammatilise vormi põhjal õige sõnakuju tuletamine)
+* nimeolemite e nimega üksuste tuvastamine eestikeelsest tekstist (*NER* ehk *Named-entity recognition*)
 * liidestus eesti Wordnetiga
 * eestikeelsete ajaväljendite tuvastamine ning nende semantika esitamine (TIMEX3 formaadis)
 * pindsüntaktiline analüüs ning sõltuvussüntaktiline analüüs:
