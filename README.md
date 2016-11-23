@@ -1,7 +1,7 @@
 
-EstNLTK (NLTK ehk Natural Language ToolKit) on peamiselt pythonis kirjutatud kogumik teeke eestikeelsete tekstide töötluseks.
+EstNLTK (NLTK ehk Natural Language ToolKit) on peamiselt Pythonis kirjutatud kogumik teeke eestikeelsete tekstide töötluseks.
 
-EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavaheline liidestamine, kättesaadavaks muutmine ning uute loomine.
+EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavaheline liidestamine ja kättesaadavaks muutmine ning uute loomine.
 
 
 # Huvitavamaid tööriistu, mis projekti käigus on valminud:
@@ -11,17 +11,20 @@ EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavahelin
 * [Dokumentatsioon](http://estnltk.github.io/estnltk)
 * [Kood](http://github.com/estnltk/estnltk)
 
-EstNLTK kui projekti tuumaks on estnltk pythoni teek, milles sisaldub:
+EstNLTK kui projekti tuumaks on Pythoni estnltk teek, milles sisaldub:
 
 * eesti keele sõnestamine ehk sõnapiiride tuvastamine ehk üksustamine (tokeniseerimine)
 * eesti keele lausestamine ehk lausepiiride tuvastamine
-* eesti keele osalausestamine ehk osalause piiride tuvastamine
-* eesti keele lemmatiseerimine ehk sõnade algvormide (lemmade) määramine ja morfoloogiline analüüs (liidestudes mugavalt vabamorfiga)
+* eesti keele osalausestamine ehk osalausepiiride tuvastamine
+* eesti keele lemmatiseerimine ehk sõnade algvormide (lemmade) määramine ning morfoloogiline analüüs ja ühestamine (liidestudes mugavalt vabamorfiga)
 * sõnaliikide määramine
-* eesti keele morfoloogiline süntees (lemmast ja sõnavormist õige sõnakuju tuletamine)
-* nimeolemite e. nimega üksuste tuvastamine eestikeelsest tekstist (*NER* ehk *Named-entity recognition*)
-* liidestus eesti wordnetiga
-* eestikeelsete ajaväljendite tuvastamine
+* eesti keele morfoloogiline süntees (etteantud lemma ja grammatilise vormi põhjal õige sõnakuju tuletamine)
+* nimeolemite e nimega üksuste tuvastamine eestikeelsest tekstist (*NER* ehk *Named-entity recognition*)
+* liidestus eesti Wordnetiga
+* eestikeelsete ajaväljendite tuvastamine ning nende semantika esitamine (TIMEX3 formaadis)
+* pindsüntaktiline analüüs ning sõltuvussüntaktiline analüüs:
+	* masinõppepõhine analüüs MaltParseri abil
+	* reeglipõhine analüüs mooduli EstCG abil
 
 ##Texts-viewer
 
@@ -31,12 +34,12 @@ EstNLTK kui projekti tuumaks on estnltk pythoni teek, milles sisaldub:
 Veebitööriist tekstide käsitsi märgendamiseks ning eraldusmustrite testimiseks. 
 Võimaldab teksti kiiresti mustrite alusel märgendada ning hiljem uusi mustrieraldustööriistu olemasolevate annotatsioonide vastu testida.
 
-##kokteiliklaas
+##Volcanoplot
 
-* [Dokumentatsioon](TODO) Dokumentatsioon hetkel puudub
-* [Kood](https://github.com/estnltk/visualisations/tree/master/chi_square)
+* [Dokumentatsioon](https://github.com/estnltk/volcanoplot/blob/master/README.md)
+* [Kood](https://github.com/estnltk/volcanoplot)
 
-TODO: kirjeldus
+Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedusloendit. [Näide kasutamisest postimehe artiklite põhjal](https://github.com/estnltk/volcanoplot/blob/master/docs/postimees_tutorial.ipynb).
 
 ##Textclassifier
 
@@ -64,8 +67,7 @@ TODO: kirjeldus
 * [Kood](https://github.com/estnltk/episode-miner)
 
 
-TODO: kirjeldus
-
+Episode-miner leiab Winepi algoritmiga sündmuste jadast sagedamini esinevad episoodid. Näiteks tekstist tihti kasutatud fraasid või sõnadest sagedasemad tähekombinatsioonid. Võimaldab sündmusi rühmitada ja toob näiteid leitud episoodidest.
 
 --------- 
 
