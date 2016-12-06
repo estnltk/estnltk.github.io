@@ -76,7 +76,6 @@ Gap-tagger on veebipõhine tööriist lauselünga-eksperimentide läbiviimiseks.
 
 ## episodeminer
 
-* [Dokumentatsioon](https://estnltk.github.io/episode-miner) Olemas, tuleb veel üles panna.
 * [Kood](https://github.com/estnltk/episode-miner)
 
 
