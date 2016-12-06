@@ -1,18 +1,32 @@
 <html>
-<title>Estnltk</title>
+    <title>Estnltk</title>
 
-<!-- README.md inserted here -->
-<xmp theme="united" style="display:none;" id="mycontent">
+    <!-- README.md inserted here -->
+    <body>
+        <div id="mycontent"  >
+        </div>
+    </body>
 
-</xmp>
-<script>
+    <script src="static/marked.js"></script>
+    <script>
 
 var client = new XMLHttpRequest();
 client.open('GET', 'README.md');
 client.onreadystatechange = function() {
-  document.getElementById('mycontent').innerHTML = client.responseText
+    if (document.readyState === 'complete') {
+        console.log('1')
+            document.getElementById('mycontent').innerHTML = marked(client.responseText)
+    }else(
+            document.onreadystatechange = function(){
+
+                if (document.readyState === 'complete') {
+                    console.log('2')
+                        document.getElementById('mycontent').innerHTML = marked(client.responseText)
+                }
+
+            }
+         )
 }
-client.send();
-</script>
-<script src="v/0.2/strapdown.js"></script>
+client.send()
+    </script>
 </html>
