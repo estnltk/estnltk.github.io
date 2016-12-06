@@ -1,5 +1,8 @@
 <html>
+    <head>
     <title>Estnltk</title>
+<link rel="stylesheet" type="text/css" href="static/styles.css"> 
+    </head>
 
     <!-- README.md inserted here -->
     <body>
@@ -14,13 +17,11 @@ var client = new XMLHttpRequest();
 client.open('GET', 'README.md');
 client.onreadystatechange = function() {
     if (document.readyState === 'complete') {
-        console.log('1')
             document.getElementById('mycontent').innerHTML = marked(client.responseText)
     }else(
             document.onreadystatechange = function(){
 
                 if (document.readyState === 'complete') {
-                    console.log('2')
                         document.getElementById('mycontent').innerHTML = marked(client.responseText)
                 }
 
