@@ -34,16 +34,28 @@ EstNLTK kui projekti tuumaks on Pythoni estnltk teek, milles sisaldub:
 Veebitööriist tekstide käsitsi märgendamiseks ning eraldusmustrite testimiseks. 
 Võimaldab teksti kiiresti mustrite alusel märgendada ning hiljem uusi mustrieraldustööriistu olemasolevate annotatsioonide vastu testida.
 
-![](static/texts-viewer.png)
+<img src="static/texts-viewer.png">
 
 ## Volcanoplot
 
 * [Dokumentatsioon](https://github.com/estnltk/volcanoplot/blob/master/README.md)
 * [Kood](https://github.com/estnltk/volcanoplot)
 
-Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedusloendit. [Näide kasutamisest postimehe artiklite põhjal](https://github.com/estnltk/volcanoplot/blob/master/docs/postimees_tutorial.ipynb).
+Käsureatööriist html väljundiga, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedusloendit. [Näide kasutamisest postimehe artiklite põhjal](https://github.com/estnltk/volcanoplot/blob/master/docs/postimees_tutorial.ipynb).
 
-![](static/volcanoplot.png)
+<img src="static/volcanoplot.png">
+
+
+
+## Cluster-labelling-plot
+
+* [Dokumentatsioon](https://github.com/estnltk/cluster-labelling-plot/blob/master/README.md)
+* [Kood](https://github.com/estnltk/cluster-labelling-plot)
+
+Jupyter-põhine tööriist andmepunktiklastrite klassifitseerimiseks.
+
+<img src="static/cluster-labelling-plot.png">
+
 
 ## Textclassifier
 
@@ -56,7 +68,7 @@ Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedus
 
 Ner-tagger on veebitööriist, mis aitab märgendada ja annoteerida teksti. Eelkõige mõeldud nimeolemite märgendamiseks.
 
-![](static/ner-tagger.png)
+<img src="static/ner-tagger.png">
 
 ## gap-tagger
 
@@ -65,7 +77,7 @@ Ner-tagger on veebitööriist, mis aitab märgendada ja annoteerida teksti. Eelk
 
 Gap-tagger on veebipõhin tööriist lauselünga-eksperimentide läbiviimiseks. Eksperimendi käigus kuvatakse kasutajale lause ühe eemaldatud sõnaga. Selle lünga peab ta täitma ühega pakutud valikutest.
 
-![](static/gap-tagger.png)
+<img src="static/gap-tagger.png">
 
 ## episodeminer
 
