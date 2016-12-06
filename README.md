@@ -34,12 +34,16 @@ EstNLTK kui projekti tuumaks on Pythoni estnltk teek, milles sisaldub:
 Veebitööriist tekstide käsitsi märgendamiseks ning eraldusmustrite testimiseks. 
 Võimaldab teksti kiiresti mustrite alusel märgendada ning hiljem uusi mustrieraldustööriistu olemasolevate annotatsioonide vastu testida.
 
+![](static/texts-viewer.png)
+
 ## Volcanoplot
 
 * [Dokumentatsioon](https://github.com/estnltk/volcanoplot/blob/master/README.md)
 * [Kood](https://github.com/estnltk/volcanoplot)
 
 Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedusloendit. [Näide kasutamisest postimehe artiklite põhjal](https://github.com/estnltk/volcanoplot/blob/master/docs/postimees_tutorial.ipynb).
+
+![](static/volcanoplot.png)
 
 ## Textclassifier
 
@@ -52,12 +56,16 @@ Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedus
 
 Ner-tagger on veebitööriist, mis aitab märgendada ja annoteerida teksti. Eelkõige mõeldud nimeolemite märgendamiseks.
 
+![](static/ner-tagger.png)
+
 ## gap-tagger
 
 * [Dokumentatsioon](https://github.com/estnltk/gap-tagger/tree/master/docs)
 * [Kood](https://github.com/estnltk/gap-tagger)
 
 Gap-tagger on veebipõhin tööriist lauselünga-eksperimentide läbiviimiseks. Eksperimendi käigus kuvatakse kasutajale lause ühe eemaldatud sõnaga. Selle lünga peab ta täitma ühega pakutud valikutest.
+
+![](static/gap-tagger.png)
 
 ## episodeminer
 
