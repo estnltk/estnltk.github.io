@@ -6,7 +6,7 @@ EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavahelin
 
 # Huvitavamaid tööriistu, mis projekti käigus on valminud:
  
-##estnltk
+## estnltk
 
 * [Dokumentatsioon](http://estnltk.github.io/estnltk)
 * [Kood](http://github.com/estnltk/estnltk)
@@ -26,24 +26,23 @@ EstNLTK kui projekti tuumaks on Pythoni estnltk teek, milles sisaldub:
 	* masinõppepõhine analüüs MaltParseri abil
 	* reeglipõhine analüüs mooduli EstCG abil
 
-##Texts-viewer
+## Texts-viewer
 
-* [Dokumentatsioon](TODO) Dokumentatsioon hetkel puudub
+* [Dokumentatsioon](https://github.com/estnltk/texts-viewer/blob/master/README.md)
 * [Kood](https://github.com/estnltk/texts-viewer)
 
 Veebitööriist tekstide käsitsi märgendamiseks ning eraldusmustrite testimiseks. 
 Võimaldab teksti kiiresti mustrite alusel märgendada ning hiljem uusi mustrieraldustööriistu olemasolevate annotatsioonide vastu testida.
 
-##Volcanoplot
+## Volcanoplot
 
 * [Dokumentatsioon](https://github.com/estnltk/volcanoplot/blob/master/README.md)
 * [Kood](https://github.com/estnltk/volcanoplot)
 
 Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedusloendit. [Näide kasutamisest postimehe artiklite põhjal](https://github.com/estnltk/volcanoplot/blob/master/docs/postimees_tutorial.ipynb).
 
-##Textclassifier
+## Textclassifier
 
-* Dokumentatsioon hetkel puudub
 * [Kood](https://github.com/estnltk/textclassifier)
 
 ## Ner-tagger
@@ -51,23 +50,29 @@ Käsureatööriist, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedus
 * [Dokumentatsioon](https://github.com/estnltk/ner-tagger/blob/master/README.md)
 * [Kood](https://github.com/estnltk/ner-tagger)
 
-Veebitööriist, mis aitab märgendada ja annoteerida teksti. Eelkõige mõeldud nimeolemite märgendamiseks.
+Ner-tagger on veebitööriist, mis aitab märgendada ja annoteerida teksti. Eelkõige mõeldud nimeolemite märgendamiseks.
 
+## gap-tagger
 
-##gap-tagger
-
-* [Dokumentatsioon](TODO) Dokumentatsioon hetkel puudub
+* [Dokumentatsioon](https://github.com/estnltk/gap-tagger/tree/master/docs)
 * [Kood](https://github.com/estnltk/gap-tagger)
 
-TODO: kirjeldus
+Gap-tagger on veebipõhin tööriist lauselünga-eksperimentide läbiviimiseks. Eksperimendi käigus kuvatakse kasutajale lause ühe eemaldatud sõnaga. Selle lünga peab ta täitma ühega pakutud valikutest.
 
-##episodeminer
+## episodeminer
 
-* [Dokumentatsioon](TODO) Olemas, tuleb veel üles panna.
+* [Dokumentatsioon](https://estnltk.github.io/episode-miner) Olemas, tuleb veel üles panna.
 * [Kood](https://github.com/estnltk/episode-miner)
 
 
 Episode-miner leiab Winepi algoritmiga sündmuste jadast sagedamini esinevad episoodid. Näiteks tekstist tihti kasutatud fraasid või sõnadest sagedasemad tähekombinatsioonid. Võimaldab sündmusi rühmitada ja toob näiteid leitud episoodidest.
+
+## pattern-examiner
+
+* [Dokumentatsioon](https://github.com/estnltk/pattern-examiner/blob/master/README.md)
+* [Kood](https://github.com/estnltk/pattern-examiner)
+
+Pattern-examiner on tööriist suurte tekstihulkade sarnansuse hindamiseks, nende klasterdamiseks ja filtreerimiseks.
 
 --------- 
 
