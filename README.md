@@ -96,4 +96,12 @@ Pattern-examiner on tööriist suurte tekstihulkade sarnansuse hindamiseks, nend
 
 --------- 
 
+# Avaldatud artiklid
+
+* Alexander Tkachenko, Timo Petmanson, Sven Laur: [Hybrid Lemmatizer for Estonian. Baltic HLT 2014: 244-247](http://ebooks.iospress.nl/publication/38035)
+* Siim Orasmaa, Timo Petmanson, Alexander Tkachenko, Sven Laur, Heiki-Jaan Kaalep: [EstNLTK - NLP Toolkit for Estonian. LREC 2016](http://www.lrec-conf.org/proceedings/lrec2016/summaries/332.html)
+
+--------- 
+
+
 EstNLTK on Loodud Tartu Ülikoolis, projektijuht on Sven Laur.
