@@ -1,107 +1,92 @@
-# EstNLTK
+EstNLTK -- Open source tools for Estonian natural language processing
+=====================================================================
 
-EstNLTK (NLTK ehk Natural Language ToolKit) on peamiselt Pythonis kirjutatud kogumik teeke eestikeelsete tekstide töötluseks.
+EstNLTK provides common natural language processing functionality such as paragraph, sentence and word tokenization,
+morphological analysis, named entity recognition, etc. for the Estonian language.
 
-EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavaheline liidestamine ja kättesaadavaks muutmine ning uute loomine.
+The project is funded by EKT ([Eesti Keeletehnoloogia Riiklik Programm](https://www.keeletehnoloogia.ee/)).
 
+### Installation
 
-# Huvitavamaid tööriistu, mis projekti käigus on valminud:
- 
-## estnltk
+EstNLTK is available for osx, windows-64, and linux-64, and for python versions 3.7 to 3.10. 
+You can install the latest version via PyPI:
 
-* [Dokumentatsioon](http://estnltk.github.io/estnltk)
-* [Kood](http://github.com/estnltk/estnltk)
+```
+pip install estnltk==1.7.1
+```
 
-EstNLTK kui projekti tuumaks on Pythoni estnltk teek, milles sisaldub:
+Alternatively, you can install EstNLTK via [Anaconda](https://www.anaconda.com/download). Installation steps with conda:
 
-* eesti keele sõnestamine ehk sõnapiiride tuvastamine ehk üksustamine (tokeniseerimine)
-* eesti keele lausestamine ehk lausepiiride tuvastamine
-* eesti keele osalausestamine ehk osalausepiiride tuvastamine
-* eesti keele lemmatiseerimine ehk sõnade algvormide (lemmade) määramine ning morfoloogiline analüüs ja ühestamine (liidestudes mugavalt vabamorfiga)
-* sõnaliikide määramine
-* eesti keele morfoloogiline süntees (etteantud lemma ja grammatilise vormi põhjal õige sõnakuju tuletamine)
-* nimeolemite e nimega üksuste tuvastamine eestikeelsest tekstist (*NER* ehk *Named-entity recognition*)
-* liidestus eesti Wordnetiga
-* eestikeelsete ajaväljendite tuvastamine ning nende semantika esitamine (TIMEX3 formaadis)
-* pindsüntaktiline analüüs ning sõltuvussüntaktiline analüüs:
-	* masinõppepõhine analüüs MaltParseri abil
-	* reeglipõhine analüüs mooduli EstCG abil
+1. [create a conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) with python 3.8, for instance:
+```
+conda create -n py38 python=3.8
+```
 
-## Texts-viewer
+2. [activate the environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment), for instance:
+```
+conda activate py38
+```
 
-* [Dokumentatsioon](https://github.com/estnltk/texts-viewer/blob/master/README.md)
-* [Kood](https://github.com/estnltk/texts-viewer)
+3. install EstNLTK with the command:
+```
+conda install -c estnltk -c conda-forge estnltk=1.7.1
+```
 
-Veebitööriist tekstide käsitsi märgendamiseks ning eraldusmustrite testimiseks. 
-Võimaldab teksti kiiresti mustrite alusel märgendada ning hiljem uusi mustrieraldustööriistu olemasolevate annotatsioonide vastu testida.
+_Note_: for using some of the tools in estnltk, you also need to have Java installed in your system. We recommend using Oracle Java http://www.oracle.com/technetwork/java/javase/downloads/index.html, although alternatives such as OpenJDK (http://openjdk.java.net/) should also work.
 
-<img src="static/texts-viewer.png" width="200px">
+### Using on Google Colab
 
-## Volcanoplot
+You can install EstNLTK on [Google Colab](https://colab.research.google.com) environment via command:
 
-* [Dokumentatsioon](https://github.com/estnltk/volcanoplot/blob/master/README.md)
-* [Kood](https://github.com/estnltk/volcanoplot)
+```
+!pip install estnltk==1.7.1
+```
 
-Käsureatööriist html väljundiga, mis võimaldab visuaalselt võrrelda kahte csv-kujul sagedusloendit. [Näide kasutamisest postimehe artiklite põhjal](https://github.com/estnltk/volcanoplot/blob/master/docs/postimees_tutorial.ipynb).
+### Documentation
 
-<img src="static/volcanoplot.png" width="200px" width="200px">
+EstNLTK's tutorials come in the form of [jupyter notebooks](http://jupyter.org).
 
+  * [Starting point of tutorials](https://github.com/estnltk/estnltk/blob/main/tutorials/README.md) | [tutorials folder](https://github.com/estnltk/estnltk/blob/main/tutorials/)
+  
+Additional educational materials on EstNLTK are available on web pages of an NLP course taught at the University of Tartu:
 
-
-## Cluster-labelling-plot
-
-* [Dokumentatsioon](https://github.com/estnltk/cluster-labelling-plot/blob/master/README.md)
-* [Kood](https://github.com/estnltk/cluster-labelling-plot)
-
-Jupyter-põhine tööriist andmepunktiklastrite klassifitseerimiseks.
- 
-<img src="static/cluster-labelling-plot.png" width="200px">
+  * [https://github.com/d009/EstNLP](https://github.com/d009/EstNLP) (in Estonian)
 
 
-## Textclassifier
+Note: if you have trouble viewing jupyter notebooks in github (you get an error message _Sorry, something went wrong. Reload?_ at loading a notebook), then try to open notebooks with the help of [https://nbviewer.jupyter.org](https://nbviewer.jupyter.org)
 
-* [Kood](https://github.com/estnltk/textclassifier)
+### Source
 
-## Ner-tagger
+As of version 1.7, the EstNLTK library has been split into 3 Python packages:
 
-* [Dokumentatsioon](https://github.com/estnltk/ner-tagger/blob/master/README.md)
-* [Kood](https://github.com/estnltk/ner-tagger)
+* `estnltk_core` -- package containing core data structures, interfaces and data conversion functions of the EstNLTK library;
+* `estnltk` -- the standard package, which contains basic linguistic analysis (including Vabamorf's morphological analysis, syntactic parsing and information extraction tools), system taggers and Postgres database tools;
+* `estnltk_neural` -- package containing additional linguistic analysis based on neural models (Bert embeddings tagger, Stanza syntax taggers and neural morphological tagger);
 
-Ner-tagger on veebitööriist, mis aitab märgendada ja annoteerida teksti. Eelkõige mõeldud nimeolemite märgendamiseks.
+Source code of packages is available at the [EstNLTK's monorepository](https://github.com/estnltk/estnltk/tree/main).  
 
-<img src="static/ner-tagger.png" width="200px">
+Changelog is available [here](https://github.com/estnltk/estnltk/blob/main/CHANGELOG.md).
 
-## gap-tagger
+### `estnltk_neural`
 
-* [Dokumentatsioon](https://github.com/estnltk/gap-tagger/tree/master/docs)
-* [Kood](https://github.com/estnltk/gap-tagger)
+Tools in `estnltk_neural` require installation of deep learning frameworks (`tensorflow`, `pytorch`), and are demanding for computational resources; they also rely on large models which need to be downloaded separately. 
+Instructions for installing the package can be found [here](https://github.com/estnltk/estnltk/blob/main/estnltk_neural/README.md).
 
-Gap-tagger on veebipõhine tööriist lauselünga-eksperimentide läbiviimiseks. Eksperimendi käigus kuvatakse kasutajale lause ühe eemaldatud sõnaga. Selle lünga peab ta täitma ühega pakutud valikutest.
+### Citation
 
-<img src="static/gap-tagger.png" width="200px">
+In case you use EstNLTK in your work, please cite us as follows:
 
-## episodeminer
-
-* [Kood](https://github.com/estnltk/episode-miner)
-
-
-Episode-miner leiab Winepi algoritmiga sündmuste jadast sagedamini esinevad episoodid. Näiteks tekstist tihti kasutatud fraasid või sõnadest sagedasemad tähekombinatsioonid. Võimaldab sündmusi rühmitada ja toob näiteid leitud episoodidest.
-
-## pattern-examiner
-
-* [Dokumentatsioon](https://github.com/estnltk/pattern-examiner/blob/master/README.md)
-* [Kood](https://github.com/estnltk/pattern-examiner)
-
-Pattern-examiner on tööriist suurte tekstihulkade sarnansuse hindamiseks, nende klasterdamiseks ja filtreerimiseks.
-
---------- 
-
-# Avaldatud artiklid
-
-* Alexander Tkachenko, Timo Petmanson, Sven Laur: [Hybrid Lemmatizer for Estonian. Baltic HLT 2014: 244-247](http://ebooks.iospress.nl/publication/38035)
-* Siim Orasmaa, Timo Petmanson, Alexander Tkachenko, Sven Laur, Heiki-Jaan Kaalep: [EstNLTK - NLP Toolkit for Estonian. LREC 2016](http://www.lrec-conf.org/proceedings/lrec2016/summaries/332.html)
-
---------- 
+    @InProceedings{laur-EtAl:2020:LREC,
+      author    = {Laur, Sven  and  Orasmaa, Siim  and  Särg, Dage  and  Tammo, Paul},
+      title     = {EstNLTK 1.6: Remastered Estonian NLP Pipeline},
+      booktitle = {Proceedings of The 12th Language Resources and Evaluation Conference},
+      month     = {May},
+      year      = {2020},
+      address   = {Marseille, France},
+      publisher = {European Language Resources Association},
+      pages     = {7154--7162},
+      url       = {https://www.aclweb.org/anthology/2020.lrec-1.884}
+    }
 
 
-EstNLTK on Loodud Tartu Ülikoolis, projektijuht on Sven Laur.
+(C) University of Tartu  
