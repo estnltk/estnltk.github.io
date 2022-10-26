@@ -9,7 +9,7 @@ EstNLTK eesmärkideks on olemasolevate keeletehnoloogia tööriistade omavahelin
  
 ## estnltk
 
-* [Dokumentatsioon](http://estnltk.github.io/estnltk)
+* [Dokumentatsioon](https://github.com/estnltk/estnltk/tree/version_1.4.1.1/docs/html/1.4.1)
 * [Kood](https://github.com/estnltk/estnltk/tree/version_1.4.1.1) 
 
 EstNLTK kui projekti tuumaks on Pythoni estnltk teek, milles sisaldub:
