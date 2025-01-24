@@ -10,11 +10,11 @@ The project is funded by EKT ([Eesti Keeletehnoloogia Riiklik Programm](https://
 
 ### Installation
 
-EstNLTK is available for osx, windows-64, and linux-64, and for python versions 3.9 to 3.12. 
+EstNLTK is available for osx, windows-64, and linux-64, and for python versions 3.9 to 3.12 (3.13*). 
 You can install the latest version via PyPI:
 
 ```
-pip install estnltk==1.7.3
+pip install estnltk==1.7.4
 ```
 
 Alternatively, you can install EstNLTK via [Anaconda](https://www.anaconda.com/download). Installation steps with conda:
@@ -31,8 +31,10 @@ conda activate py310
 
 3. install EstNLTK with the command:
 ```
-conda install -c estnltk -c conda-forge estnltk=1.7.3
+conda install -c estnltk -c conda-forge estnltk=1.7.4
 ```
+
+*Currently, estnltk package for python 3.13 is only available via pip. 
 
 _Remark about conda installations:_ As our platform coverage is wider on pip, we encourage installing EstNLTK inside conda environment through pip if the default conda installation fails.  
 
@@ -45,7 +47,7 @@ _Note_: for using some of the tools in estnltk, you also need to have Java insta
 You can install EstNLTK on [Google Colab](https://colab.research.google.com) environment via command:
 
 ```
-!pip install estnltk==1.7.3
+!pip install estnltk==1.7.4
 ```
 
 ### Documentation
